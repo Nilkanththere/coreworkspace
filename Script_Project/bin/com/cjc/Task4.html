@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Table Create</title>
+<script type="text/javascript">
+
+ function hello1()
+{
+	 alert("in hello");
+
+	var table=document.getElementById("tab");
+	var row1=table.insertRow();
+	var cell1=row1.insertCell();
+	var cell2=row1.insertCell();
+     var cell3=row1.insertCell();
+	cell1.innerHTML="Rollno";
+	cell2.innerHTML="Name";
+	cell3.innerHTML="Address";
+	
+	
+	var data=[{rollno:1,name:"Ashish",address:"pune"},{rollno:2,name:"Rakesh",address:"Nagpur"},{rollno:3,name:"Nikhil",address:"Mumbai"}];
+	
+	for(var i=0;i<data.length;i++)
+		{
+		
+		var row2=table.insertRow();
+		var cell1=row2.insertCell();
+		cell1.innerHTML=data[i].rollno;
+		
+		var cell2=row2.insertCell();
+		cell2.innerHTML=data[i].name;
+		
+		
+		var cell3=row2.insertCell();
+		cell3.innerHTML=data[i].address;
+		
+		}
+	
+	 
+	}
+
+
+</script>
+</head>
+<body>
+
+<table border="1" id="tab">
+</table>
+
+<input type="button" value="ok" ondblclick="hello1()">
+</head>
+<body>
+
+</body>
+</html>

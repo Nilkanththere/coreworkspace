@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.spring.scope.Tset&apos; to &apos;Test&apos;&#x0D;&#x0A;- Original project: &apos;Spring_singleton_scop_lazyloding_beanFactory&apos;&#x0D;&#x0A;- Original element: &apos;com.spring.scope.Tset&apos;&#x0D;&#x0A;- Renamed element: &apos;com.spring.scope.Test&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Tset&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.spring.scope{Tset.java[Tset" matchStrategy="1" name="Test" qualified="false" references="true" similarDeclarations="false" stamp="1623950525846" textual="false" version="1.0"/>
+</session>

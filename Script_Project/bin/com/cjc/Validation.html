@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Validation Page</title>
+<script type="text/javascript">
+
+function validateform()
+{
+	
+	alert("hello")
+	var name=document.myform.name.value;
+	var pass=document.myform.pass.value;
+	if(name==null||name=="")
+		{
+		alert("name Can't be Blank")
+		return false;
+		}
+	
+	else if(pass.length<6){
+		
+		alert("Password is not Valid")
+		return false;
+		
+	}
+		}
+	
+	
+</script>
+
+
+</head>
+<body>
+<form name="myform" onsubmit="return validateform()">
+username:-<input type="text" name="name"> <br>
+
+Password:-<input type="password" name="pass"><br>
+
+
+<input type="submit" value="ok">
+
+</form>
+
+</body>
+</html>

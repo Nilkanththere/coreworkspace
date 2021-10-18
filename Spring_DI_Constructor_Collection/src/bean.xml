@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="c" class="com.di.collection.Student">
+    
+   <constructor-arg>
+    <list>
+    <value>Java</value>
+    <value>Python</value>
+    <value>C++</value>
+    </list>
+  </constructor-arg>
+    
+     <constructor-arg>
+    <set>
+    <value>.net</value>
+    <value>webcore</value>
+    <value>Angular</value>
+    </set>
+  </constructor-arg>
+  
+  
+  <constructor-arg>
+  <map>
+  
+  <entry key="1" value="akurdi"></entry>
+  <entry key="2" value="pune"></entry>
+  </map>
+  </constructor-arg>
+ 
+    </bean>
+    </beans>

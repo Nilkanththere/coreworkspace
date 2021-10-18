@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function abc()
+{
+	document.getElemntById("t1").innerHTML="mouse over event occur";
+}
+
+function xyz()
+{
+	document.getElemntById("t1").innerHTML="mouse out event occur";
+
+}
+
+function pqr()
+{
+	alert("in pqr function")
+
+}
+
+
+
+</script>
+
+
+
+
+</head>
+<body onload="pqr()">
+
+
+
+<h1 id="t1" onmouseover="abc()" onmouseout="xyz()">WelCome To CJC</h1>
+</body>
+</html>

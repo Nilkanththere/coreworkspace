@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    
+    
+    <bean id="m1" class="com.Array.MobileNo">
+    <property name="mobno" value="9845632145"></property>
+    </bean>
+    
+    <bean id="m2" class="com.Array.MobileNo">
+    <property name="mobno" value="9845632145"></property>
+    </bean>
+    
+    <bean id="m3" class="com.Array.MobileNo">
+    <property name="mobno" value="8411090881"></property>
+    </bean>
+    
+    
+    <bean id="m4" class="com.Array.MobileNo">
+    <property name="mobno" value="9561753391"></property>
+    </bean>
+    
+    <bean id="m5" class="com.Array.MobileNo">
+    <property name="mobno" value="7963258410"></property>
+    </bean>
+    
+    <bean id="stu" class="com.Array.Student">
+    <property name="rollno" value="101"></property>
+    <property name="name" value="Nikhil"></property>
+    
+    <property name="mobno">
+    <list>
+         
+           <ref bean="m1"/>
+           
+           <ref bean="m2"/>
+    
+           <ref bean="m3"/>
+           
+           <ref bean="m4"/>
+           
+           <ref bean="m5"/>
+    </list>
+    </property>
+    </bean>
+    
+    </beans>

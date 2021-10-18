@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration page</title>
+</head>
+<body bgcolor="silver">
+	<h1>Register here!!!</h1>
+	<form action="reg" method="post">
+		<table>
+			<tr>
+				<td>User Name:</td>
+				<td><input type="text" name="t1"></td>
+			</tr>
+
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="t2"></td>
+			</tr>
+
+			<tr>
+				<td>Name:</td>
+				<td><input type="text" name="t3"></td>
+			</tr>
+
+			<tr>
+				<td>Address:</td>
+				<td><input type="text" name="t4"></td>
+			</tr>
+
+			<tr>
+				<td>Phone No:</td>
+				<td><select>
+						<option>+91</option>
+						<option>0</option>
+				</select> <input type="number" name="t5"></td>
+			</tr>
+			
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" name="t6"></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="Register"></td>
+
+				<td><a href="login.html">click here to login</a></td>
+			</tr>
+
+
+		</table>
+
+
+	</form>
+
+</body>
+</html>

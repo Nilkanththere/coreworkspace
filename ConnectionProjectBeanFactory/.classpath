@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/spring-5.3.6-dist/spring-framework-5.3.6/IOCjar/spring-aop-5.3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/spring-5.3.6-dist/spring-framework-5.3.6/IOCjar/spring-aspects-5.3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/spring-5.3.6-dist/spring-framework-5.3.6/IOCjar/spring-beans-5.3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/spring-5.3.6-dist/spring-framework-5.3.6/IOCjar/spring-context-5.3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/spring-5.3.6-dist/spring-framework-5.3.6/IOCjar/spring-context-indexer-5.3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/spring-5.3.6-dist/spring-framework-5.3.6/IOCjar/spring-context-support-5.3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/spring-5.3.6-dist/spring-framework-5.3.6/IOCjar/spring-core-5.3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/spring-5.3.6-dist/spring-framework-5.3.6/IOCjar/spring-expression-5.3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/spring-5.3.6-dist/spring-framework-5.3.6/IOCjar/spring-jcl-5.3.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function validateform()
+{
+	alert("Hello")
+	var pass=document.myform.pass.value;
+	var pass1=document.myform.pass1.value;
+	if(pass1==pass)
+		{
+		return true;
+		}
+	else{
+		
+		alert("password Must be Same");
+		return false;
+	}
+	}
+</script>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+<form name="myform" action="log" onsubmit="return validateform()">
+
+password:-<input type="password" name="pass"><br>
+
+re-EnterPassword:-<input type="password" name="pass1"><br>
+
+<input type="submit" value="Ok">
+
+</form>
+
+
+
+</body>
+</html>
