@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration form</title>
+<style>
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
+</head>
+<body>
+	<img src="C:\Users\india\Desktop\images.png" width="400" height="100"
+		class="center">
+	<br>
+	<br>
+
+	<h4 align="center">Student Registration form</h4>
+	<form action="regsuccessful.html" method="post">
+		<table border="1" align="center">
+
+			<tr>
+				<td>First Name*:</td>
+				<td><input type="text" placeholder="First name"
+					required="required"></td>
+
+			</tr>
+
+			<tr>
+				<td>Middle Name:</td>
+				<td><input type="text" placeholder="Middle name"></td>
+			</tr>
+
+			<tr>
+				<td>Last Name:</td>
+				<td><input type="text" placeholder="Last name"></td>
+			</tr>
+			<tr>
+				<td>Mobile No</td>
+				<td><input type="Number" name="mobno"></td>
+			</tr>
+
+
+			<tr>
+				<td>AdharNo*</td>
+				<td><input type="Number" name="adhar" required="required"></td>
+			</tr>
+
+			<tr>
+				<td>D.O.B</td>
+				<td><input type="date" name="dob"></td>
+			</tr>
+
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td><input type="radio" name="gender" value="male">male
+					<input type="radio" name="gender" value="female">female</td>
+			</tr>
+
+			<tr>
+				<td>Address:</td>
+				<td><textarea rows="5" cols="60"></textarea></td>
+
+			</tr>
+
+			<tr>
+				<td>Pincode:</td>
+				<td><input type="pincode" name="pincode"></td>
+			</tr>
+
+			<tr>
+				<td>State:</td>
+				<td><select name="state">
+						<option>Maharashtra</option>
+						<option>Goa</option>
+						<option>Gujrat</option>
+						<option>Bihar</option>
+						<option>AndraPradesh</option>
+
+				</select></td>
+
+			</tr>
+			<tr>
+				<td>All above information is Correct*:</td>
+				<td><input type="checkbox" required="required"></td>
+			</tr>
+		</table>
+		<div align="center">
+			<input type="submit" value="Submit"><input type="reset"
+				value="Reset">
+		</div>
+
+
+	</form>
+</body>
+</html>

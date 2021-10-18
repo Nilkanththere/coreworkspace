@@ -1,0 +1,23 @@
+package setdatastructure;
+
+import java.util.*;
+
+public class College {
+ 
+	public Set<Student>m1()
+	{
+		 Set<Student> fe=new HashSet<>();
+		Student stu=new Student();
+		        stu.setRollno(123);
+		        stu.setName("Akash");
+		       
+		        fe.add(stu);
+		        
+		  Student stu1=new Student();
+		          stu1.setRollno(963);
+		          stu1.setName("Rakesh");
+                 fe.add(stu1);
+        
+           return fe;      
+	}
+}

@@ -1,0 +1,12 @@
+package practice.basics;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		AAA a=new AAA();
+		AAA b=new AAA("abc");
+		
+	}
+
+}

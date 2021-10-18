@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Jul 05 09:27:00 IST 2021
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\india\\workspace\\Food_WebSite_Page_Project\\WebContent\\WEB-INF\\lib\\spring-web-5.3.6.jar=WEB-INF/lib/spring-web-5.3.6.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\india\\workspace\\Food_WebSite_Page_Project\\WebContent\\WEB-INF\\lib\\spring-web-5.3.6-sources.jar=WEB-INF/lib/spring-web-5.3.6-sources.jar

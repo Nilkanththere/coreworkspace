@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Declaration</title>
+<style>
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#sign {
+	border: 4px solid #ccc;
+}
+</style>
+</head>
+<body>
+
+	<img src="C:\Users\india\Desktop\AAI.jpg" width="400" height="100"
+		class="center">
+	<h1 align="center">AirPort Authority Of India</h1>
+	<h4 align="center">Covid-19 Self Declaration form</h4>
+	<form action="Success.html" method="post">
+		<table border="1" align="center">
+
+
+
+			<tr>
+				<td>First Name*:</td>
+				<td>
+				<input type="text" placeholder="First Name"  required="required" >
+				
+				</td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input type="text" placeholder="Last Name"></td>
+
+			</tr>
+
+			<tr>
+				<td>Mobile Number:</td>
+				<td><select>
+						<option>91</option>
+						<option>0</option>
+
+				</select> <input type="number" placeholder="Mobile No"></td>
+			</tr>
+			<tr>
+				<td>Adharcard Number:</td>
+				<td><input type="number" placeholder="Adharcard No"></td>
+			</tr>
+			<tr>
+				<td>Ticket No:</td>
+				<td><input type="number" placeholder="Ticket No"></td>
+
+			</tr>
+
+			<tr>
+				<td>Gender:</td>
+
+
+				<td><label for="male">male</label> <input type="radio"
+					name="gender" id="male" value="male"> <label for="female">female</label>
+					<input type="radio" name="gender" id="female" value="female">
+
+					<label for="other">other</label> <input type="radio" name="gender"
+					id="other" value="other"></td>
+			<tr>
+				<td><label>Have you been in Contact with people being
+						infected,suspected or diagnosed with COVID-19?</label></td>
+				<td><select>
+						<option>yes</option>
+						<option>no</option>
+
+				</select></td>
+			</tr>
+			<tr>
+				<td><label>Have you travelled abroad during 2020?</label></td>
+				<td><select>
+						<option>yes</option>
+						<option>no</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><label>Date of travel</label></td>
+				<td><input type="date" name="name"></td>
+
+			</tr>
+			<tr>
+				<td><label>please state whether you've experienced/are
+						experiencing the following</label></td>
+
+				<td><label for="fever">fever</label> <input type="checkbox">
+
+					<label for="Cough">Cough</label> <input type="checkbox"> <label
+					for="Chestpain">Chestpain</label> <input type="checkbox"></td>
+
+			</tr>
+
+			<tr>
+				<td><label>I acknowledge that the information l've
+						given is accurate and complete. </label></td>
+				<td><input type="checkbox"></td>
+
+			</tr>
+			<tr>
+				<td valign="top">Signature</td>
+				<td><div class="container"> 
+					<div class="row">
+                   <div class="col-md-12">
+        
+                   </div>
+					
+						
+						</div>
+						
+						
+						
+						<div class="row">
+						<div class="col-md-12">
+						<canvas id="sig-canvas" width="400" height="100"></canvas>
+						
+						</div>
+						</div>
+						
+						<div class="row">
+						<div class="col-md-12">
+						<button class="btn btn-primary" id="sig-submitBtn">Submit Signature</button>
+						<button class="btn btn-default" id="sig-clearBtn">Clear Signature</button>
+						 </div>
+						</div>
+						<br/>
+						<div class="row">
+						<div class="col-md-12">
+						<textarea id="sign-detaUrl" class="form-control"></textarea>
+						</div>
+						</div>
+						<br/>
+						<div class="row">
+						<div class="col-md-12">
+						<img id="sig-image" src="" alt="your signature"/>
+						
+						</div>
+						</div>
+						
+						
+						
+						
+                              </div>
+					</td>
+
+			</tr>
+			
+			<tr>
+			<td align="center"><input type="reset" value="reset"></td>
+			
+		</tr>
+
+			<tr>
+
+				<td align="center"><input type="submit" value="submit"></td>
+                  
+			</tr>
+
+
+
+		</table>
+
+
+	</form>
+
+
+
+
+
+
+</body>
+</html>

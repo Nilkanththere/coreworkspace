@@ -1,0 +1,41 @@
+package collectionframework;
+
+import java.util.*;
+
+public class Details {
+
+	public  List setDetail()
+	{
+		Employee e=new Employee();
+		         e.setEmid(1256);
+		         e.setEmname("Ashish");
+		         e.setEmdesig("Developer");
+		         e.setEmsalary(25000);
+		         
+		 List l=new ArrayList();
+		      
+		      l.add(e);
+	
+	return l;
+}
+      public void getDetail()
+      {
+    	  Details e1=new Details();
+    	  List data=e1.setDetail();
+    	  Iterator itr=data.iterator();
+    	  
+    	  while(itr.hasNext())
+    	  {
+    		  Employee em=(Employee)itr.next();
+    		  System.out.println(em.getEmid());
+    		  System.out.println(em.getEmname());
+    		  System.out.println(em.getEmdesig());
+    		  System.out.println(em.getEmsalary());
+    		  
+    	  }
+    	  
+    	  
+      }
+      
+	
+}

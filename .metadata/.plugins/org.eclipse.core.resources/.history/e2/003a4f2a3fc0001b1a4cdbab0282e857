@@ -1,0 +1,14 @@
+package practice.basics;
+
+public class AA {
+
+	
+	int a;
+	
+	
+	public static void main(String[] args) {
+		
+		AA a=new AA();
+		
+	}
+}

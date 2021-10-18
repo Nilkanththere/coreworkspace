@@ -1,0 +1,21 @@
+package customException;
+
+public class Test {
+
+	public static void main(String[] args) {
+	
+		
+		
+		
+		int age=Integer.parseInt(args[0]);
+		
+		if (age>60)
+		{
+			throw new TooyoungException("you are Too young For this");
+			
+			
+		}
+		
+	}
+
+}

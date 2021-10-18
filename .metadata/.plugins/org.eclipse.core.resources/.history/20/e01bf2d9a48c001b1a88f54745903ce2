@@ -1,0 +1,5 @@
+package com.brainedata.bankmanagement.model;
+
+public class Account {
+
+}

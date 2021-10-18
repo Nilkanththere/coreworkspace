@@ -1,0 +1,17 @@
+package stringMethodsTasks;
+
+public class Task6 {
+
+	public static void main(String[] args) {
+		
+		
+		String ss=new String("Cjc Complte Java Classes");
+		
+		String s=" ";
+		for(int i=0;i<ss.length();i++)
+		{
+			
+		}
+		
+	}
+}

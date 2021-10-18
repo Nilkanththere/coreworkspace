@@ -1,0 +1,39 @@
+package practice.basics;
+
+public class StaticVariable {
+     int rollno;
+     String name;
+     static String college="GPS";
+     
+     
+     
+     public StaticVariable( int rollno,String name)
+     { 
+    	 this.rollno=rollno;
+    	 this.name=name;
+    	 
+     }
+     
+     public void display()
+     {
+    	 System.out.println("Rollno:"+rollno+"Name:"+name+"College:"+college);
+     }
+     
+     
+     public static void main(String[] args) {
+		
+	
+     StaticVariable st=new  StaticVariable (10,"Akshay");
+     StaticVariable st1=new  StaticVariable (11,"Rakesh");
+     StaticVariable st2=new  StaticVariable (12,"Neel");
+     
+           st.display();
+           st1.display();
+           st2.display();
+     
+     }
+	
+	
+	
+	
+}

@@ -1,0 +1,21 @@
+package practice.basics;
+
+public class AAA {
+
+	String xyz="Ashish";
+	 
+	 public AAA()
+	 {
+	   System.out.println("non para constrcutor");	 
+	 }
+	
+	 public AAA(String a)
+	 {
+		 this.xyz=a;
+		System.out.println("para constructor"); 
+	 }
+	
+	
+	 
+	
+}

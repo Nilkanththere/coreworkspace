@@ -1,0 +1,11 @@
+package customException;
+
+public class TooyoungException extends Exception {
+	
+	
+	TooyoungException(String msg)
+	{
+		super(msg);
+	}
+
+}

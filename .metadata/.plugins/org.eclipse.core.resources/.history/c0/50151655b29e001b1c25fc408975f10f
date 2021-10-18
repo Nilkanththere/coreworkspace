@@ -1,0 +1,26 @@
+package collectionframework;
+
+
+import java.util.*;
+
+public class University {
+
+	public static void main(String[] args) {
+		
+      
+		    List l=new ArrayList();
+            College c=new College();
+            List data=(List)c.m1();
+            l.add(data);     
+            Iterator itr =l.iterator();
+                  
+              while(itr.hasNext())
+                  {
+            Student3 stu=(Student3)itr.next();
+            System.out.println(stu.getRollno());
+            System.out.println(stu.getName());
+                  }
+	}
+
+}
+

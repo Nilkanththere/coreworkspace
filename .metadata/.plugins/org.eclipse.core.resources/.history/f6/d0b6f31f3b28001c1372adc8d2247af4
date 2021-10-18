@@ -1,0 +1,36 @@
+package cjc;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ReverseOrder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		ArrayList list=new ArrayList();
+		           
+		          list.add("Shivraj");
+		          list.add("Ahsish");
+		          list.add("Nell");
+		          list.add("Rakesh");
+		          
+		          
+		    System.out.println(list);
+		    
+		    
+		    Collections.sort(list,Collections.reverseOrder());
+		    
+		    System.out.println(list);
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

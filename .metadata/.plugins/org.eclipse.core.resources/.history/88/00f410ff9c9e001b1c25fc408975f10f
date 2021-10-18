@@ -1,0 +1,14 @@
+package collectionframework;
+
+public class University {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+          College c=new College();
+                  c.m1();
+                  
+	}
+
+}

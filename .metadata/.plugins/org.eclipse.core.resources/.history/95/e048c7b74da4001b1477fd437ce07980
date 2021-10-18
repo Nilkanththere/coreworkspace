@@ -1,0 +1,194 @@
+package com.braindatawire.collegemanagement.serviceImpl;
+
+import java.util.*;
+
+import com.braindatawire.collegemanagement.model.Batch;
+import com.braindatawire.collegemanagement.model.Course;
+import com.braindatawire.collegemanagement.model.Faculty;
+import com.braindatawire.collegemanagement.model.Student;
+import com.braindatawire.collegemanagement.service.Cjc;
+
+public  class Karvenagar implements Cjc{
+
+		List<Course> clist=new ArrayList<>();
+		
+		List<Faculty> flist=new ArrayList<>();
+		
+		List<Batch> blist=new ArrayList<>();
+		
+		List<Student> slist=new ArrayList<>();
+
+	Scanner sc=new Scanner(System.in);
+	    
+    public void addCourse()
+    {
+    	    
+    	   Course c=new Course();
+    	   System.out.println("Enter Course Id");
+    	      int a=sc.nextInt();
+    	     c.setCid(a);
+    	   System.out.println("Enter Course Name");
+    	    String b=sc.next();
+    	    c.setCname(b);
+    	   System.out.println("Add course Sucessfully"); 
+    	    clist.add(c);
+    	    
+    }
+    
+    public void viewCourse()
+    {   
+    
+    	   Iterator<Course>itr=clist.iterator();
+    	   while(itr.hasNext())
+    	   {
+    		   Course s1=itr.next();
+    		   System.out.println("Student Course Id="+s1.getCid());
+    		   System.out.println("Student Name="+s1.getCname());
+    	   }
+    }
+    public void addFaculty()
+    {
+    	Faculty f=new Faculty();
+    	
+    	 System.out.println("Enter Faculty Id");
+	      int a=sc.nextInt();
+	     f.setFid(a);
+	     System.out.println("Enter Faculty Name");
+	    String b=sc.next();
+	    f.setFname(b);
+	    
+	    Iterator<Course>itr2=clist.iterator();
+ 	   while(itr2.hasNext())
+ 	   {
+ 		  Course s1=itr2.next();
+ 		   f.setCourse(s1);
+ 	   }
+	   System.out.println("Add Faculty Sucessfully"); 
+	   
+	    flist.add(f);
+    }
+    	   
+    public void viewfaculty()
+    {
+    	Iterator<Faculty>itr=flist.iterator();
+ 	   while(itr.hasNext())
+ 	   {
+ 		   Faculty s2=itr.next();
+ 		   System.out.println("Faculty Id="+s2.getFid());
+ 		   System.out.println("Faculty Name="+s2.getFname());
+ 		   System.out.println(s2.getCourse().getCid());
+ 		   System.out.println(s2.getCourse().getCname());
+ 	   }
+    	   
+   	   
+    }
+	
+    public void addBatch()
+    {
+    	Batch b=new Batch();
+    	
+    System.out.println("enter Batch Id");
+	      int a=sc.nextInt();
+	     b.setBid(a);
+	   System.out.println("Enter Batch Name");
+	    String b1=sc.next();
+	    b.setBname(b1);
+	    Iterator<Faculty>itr2=flist.iterator();
+	 	   while(itr2.hasNext())
+	 	   {
+	 		   Faculty s1=itr2.next();
+	 		   b.setFaculty(s1);
+	 	   }
+	  
+	    blist.add(b);
+	    System.out.println("Add Batch Sucessfully");
+    }
+    	   
+    public void viewbatch()
+    {
+    	System.out.println("view Batch");
+    	Iterator<Batch>itr=blist.iterator();
+ 	   while(itr.hasNext())
+ 	   {
+ 		Batch s2=itr.next();
+ 	    System.out.println("Batch Id="+s2.getBid());
+ 		System.out.println("Batch Name="+s2.getBname());
+ 		System.out.println(s2.getFaculty().getFid());
+ 		System.out.println(s2.getFaculty().getFname());
+ 	    System.out.println(s2.getFaculty().getCourse().getCid());
+ 		System.out.println(s2.getFaculty().getCourse().getCname());
+ 		   
+ 	   }
+    	   
+   	   
+    }
+    
+    public void addStudent()
+    {
+    	  Student s=new Student();
+    	
+    	 System.out.println("enter Student Id");
+	      int a=sc.nextInt();
+	     s.setSid(a);
+	     System.out.println("Enter Student Name");
+	    String b=sc.next();
+	    s.setSname(b);
+	    Iterator<Batch>itr2=blist.iterator();
+	 	   while(itr2.hasNext())
+	 	   {
+	 		   Batch s3=itr2.next();
+	 		   s.setBatch(s3);
+	 	   }
+	    System.out.println("Add Student Sucessfully"); 
+	   
+	    slist.add(s);
+    }
+    	   
+    public void viewstudent()
+    {
+    	Iterator<Student>itr=slist.iterator();
+ 	   while(itr.hasNext())
+ 	   {
+ Student s2=itr.next();
+ System.out.println("Student Id="+s2.getSid());
+ System.out.println("Student Name="+s2.getSname());
+ System.out.println("Student Batch Id="+s2.getBatch().getBid());
+ System.out.println("Student Batch Name="+s2.getBatch().getBname());
+ System.out.println("Faculty Id="+s2.getBatch().getFaculty().getFid());
+ System.out.println("Faculty Name="+s2.getBatch().getFaculty().getFname());
+ System.out.println("Student Course Id="+s2.getBatch().getFaculty().getCourse().getCid());
+ System.out.println("Student Course Name="+s2.getBatch().getFaculty().getCourse().getCname());
+ 
+ 
+ 	   }
+    	   
+   	   
+    }
+
+	
+
+	
+	
+	
+	
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+}

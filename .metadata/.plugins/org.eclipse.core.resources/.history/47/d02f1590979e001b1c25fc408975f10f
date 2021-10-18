@@ -1,0 +1,8 @@
+package collectionframework;
+
+public class Student3 {
+
+	private int rollno;
+	private String name;
+	
+}
